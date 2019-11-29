@@ -130,8 +130,8 @@ public class ElasticSearchConsumer {
 
                     // where we insert data into ElasticSearch
                     IndexRequest indexRequest = new IndexRequest(
-                            "twitter2",
-                            "tweets2",
+                            "twitter3",
+                            "tweets3",
                             id // this is to make our consumer idempotent
                     ).source(record.value(), XContentType.JSON);
 
